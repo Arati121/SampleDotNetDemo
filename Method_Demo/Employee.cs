@@ -6,20 +6,25 @@ namespace Method_Demo
 {
    public class Employee
     {
+        static int count;
         protected int eid;
         protected String ename;
         protected double esal,hra,da,pf,grossSal;
 
         public Employee()
         {
+            count++;
+            eid = count;
             eid = 101;
             ename = "Sharma";
             esal = 45000;
         }
 
-        public Employee(int eid,String ename,int esal)
+        public Employee(String ename,int esal)
         {
-            this.eid = eid;
+            count++;
+            eid = count;
+           
            this.ename = ename;
             this.esal = esal;
         }
@@ -38,7 +43,10 @@ namespace Method_Demo
         //{
         //    return "employee Hra= " + hra + " employee name= " + eid + " employee salaray= " + esal;
         //}
-
+        public static int  GetCount()
+        {
+            return count;
+        }
         public override string ToString()
         {
             return "employee id= " + eid + " employee name= " + ename + " employee salaray= " + esal+"Hra="+hra+" DA= "+da+"pf= "+pf+"GrossSalary= "+grossSal ;

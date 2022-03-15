@@ -26,8 +26,8 @@ namespace Method_Demo
             //e1.GetData();
 
             //Employee e2 = new Employee(111,"rohit",75000.5f);
-            //e2.GetData();
-            //Employee e3 = new Employee(105, "nbvfh", 85.6f);
+            // e2.GetData();
+            // Employee e3 = new Employee(105, "nbvfh", 85.6f);
             //e3.GetData();
             // Employee e1 = new Employee();
             //Console.WriteLine(e1);
@@ -35,9 +35,15 @@ namespace Method_Demo
             //Console.WriteLine(e1);
 
 
-            //Employee e2 = new Employee(101,"rajesh",35000);
+            //Employee e2 = new Employee("rajesh",35000);
             //e2.caculate();
             //Console.WriteLine(e2);
+
+            //Employee e3 = new Employee("rajesh", 35000);
+            //e3.caculate();
+            //Console.WriteLine(e3);
+
+            //Console.WriteLine("total employee= "+Employee.GetCount());
 
 
             //Manager man1 = new Manager(101,"xyz",50000,45000,1000);
@@ -49,13 +55,31 @@ namespace Method_Demo
             //s1.caculate();
             //Console.WriteLine(s1);
 
-            Calcualtion_MethodOver c1 = new Calcualtion_MethodOver();
-            Console.WriteLine(c1.calculation(10, 5));
-            Console.WriteLine(c1.calculation(10, 10, 10));
-            Console.WriteLine(c1.calculation(15, 4, 5, 1));
-            
+            //Calcualtion_MethodOver c1 = new Calcualtion_MethodOver();
+            //Console.WriteLine(c1.calculation(10, 5));
+            //Console.WriteLine(c1.calculation(10, 10, 10));
+            //Console.WriteLine(c1.calculation(15, 4, 5, 1));
 
-           
+
+            int[] rainfall = new int[5] { 100, 102, 105, 107, 110 };
+            int[] list1 = new int[5];
+
+            string[] name = { "arati", "sagar", "deven" };
+            for (int i = 0; i < rainfall.Length; i++)
+            {
+                Console.WriteLine(rainfall[i]);
+            }
+            //Array.Copy(rainfall, 1, list1, 0, 3);
+            //for (int j = 0; j < list1.Length; j++)
+            //{
+            //    Console.WriteLine(list1[j]);
+            //}
+            foreach(int r in rainfall)
+            {
+                Console.WriteLine(r);
+            }
+
+
 
 
 
