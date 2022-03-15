@@ -29,11 +29,11 @@ namespace Method_Demo
             //e2.GetData();
             //Employee e3 = new Employee(105, "nbvfh", 85.6f);
             //e3.GetData();
-           // Employee e1 = new Employee();
+            // Employee e1 = new Employee();
             //Console.WriteLine(e1);
             //e1.caculate();
             //Console.WriteLine(e1);
-           
+
 
             //Employee e2 = new Employee(101,"rajesh",35000);
             //e2.caculate();
@@ -45,9 +45,15 @@ namespace Method_Demo
             //Console.WriteLine(man1);
 
 
-            SaleManager s1 = new SaleManager(101, "rahul", 55000, 1000, 1500, 1200);
-            s1.caculate();
-            Console.WriteLine(s1);
+            //SaleManager s1 = new SaleManager(101, "rahul", 55000, 1000, 1500, 1200);
+            //s1.caculate();
+            //Console.WriteLine(s1);
+
+            Calcualtion_MethodOver c1 = new Calcualtion_MethodOver();
+            Console.WriteLine(c1.calculation(10, 5));
+            Console.WriteLine(c1.calculation(10, 10, 10));
+            Console.WriteLine(c1.calculation(15, 4, 5, 1));
+            
 
            
 
