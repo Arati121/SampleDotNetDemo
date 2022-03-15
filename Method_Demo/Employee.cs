@@ -4,30 +4,44 @@ using System.Text;
 
 namespace Method_Demo
 {
-    class Employee
+   public class Employee
     {
-        private int eid;
-        private String ename;
-        private float esal;
+        protected int eid;
+        protected String ename;
+        protected double esal,hra,da,pf,grossSal;
 
         public Employee()
         {
             eid = 101;
             ename = "Sharma";
-            esal = 45000.45f
+            esal = 45000;
         }
 
-        public Employee(int id,String name,float sal)
+        public Employee(int eid,String ename,int esal)
         {
-            eid = id;
-            ename = name;
-            esal = sal;
+            this.eid = eid;
+           this.ename = ename;
+            this.esal = esal;
         }
 
-        public String GetData()
+        public virtual void caculate()
         {
-            return "employee id= " + eid + " employee name= " + eid + " employee salaray= " + esal;
+            hra = esal * 0.40;
+            da = esal * 0.20;
+            pf = esal * 0.10;
+            grossSal = (esal + hra + da) - pf;
+
+
         }
 
+        ////public String GetData()
+        //{
+        //    return "employee Hra= " + hra + " employee name= " + eid + " employee salaray= " + esal;
+        //}
+
+        public override string ToString()
+        {
+            return "employee id= " + eid + " employee name= " + ename + " employee salaray= " + esal+"Hra="+hra+" DA= "+da+"pf= "+pf+"GrossSalary= "+grossSal ;
+        }
     }
 }

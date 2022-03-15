@@ -22,11 +22,35 @@ namespace Method_Demo
             //Student s1 = new Student(101, "akash", "ENTC", 75.5f);
             //Console.WriteLine(s1.GetData());
 
-            Employee e1 = new Employee();
-            e1.GetData();
+            //Employee e1 = new Employee();
+            //e1.GetData();
 
-            Employee e2 = new Employee(111,"rohit",75000.5f);
-            e2.GetData();
+            //Employee e2 = new Employee(111,"rohit",75000.5f);
+            //e2.GetData();
+            //Employee e3 = new Employee(105, "nbvfh", 85.6f);
+            //e3.GetData();
+           // Employee e1 = new Employee();
+            //Console.WriteLine(e1);
+            //e1.caculate();
+            //Console.WriteLine(e1);
+           
+
+            //Employee e2 = new Employee(101,"rajesh",35000);
+            //e2.caculate();
+            //Console.WriteLine(e2);
+
+
+            //Manager man1 = new Manager(101,"xyz",50000,45000,1000);
+            //man1.caculate();
+            //Console.WriteLine(man1);
+
+
+            SaleManager s1 = new SaleManager(101, "rahul", 55000, 1000, 1500, 1200);
+            s1.caculate();
+            Console.WriteLine(s1);
+
+           
+
 
 
         }
